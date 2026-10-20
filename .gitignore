@@ -1,0 +1,6 @@
+node_modules/
+*.log
+.DS_Store
+
+# Local captured memory data, never part of the plugin package.
+.memsearch/

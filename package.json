@@ -1,0 +1,44 @@
+{
+  "name": "opencode2-local-memory",
+  "version": "0.1.0",
+  "description": "opencode v2 local cross-session memory plugin: capture turn summaries, inject recent days into the system prompt, and search all historical memory with pure JS keyword matching. Zero native dependencies.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "test",
+    "scripts",
+    "docs",
+    "README.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "memory",
+    "cross-session",
+    "memsearch"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "smoke": "node scripts/smoke-test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": ">=2.0.30"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caopu16/opencode2-local-memory"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}
